@@ -1,0 +1,9 @@
+* {
+    background-color: var(--dark-grey);
+    box-sizing: border-box;
+    color: var(--not-white);
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}

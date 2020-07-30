@@ -1,0 +1,116 @@
+form {
+    animation: formAnimation 600ms ease-out;
+    display: flex;
+    flex-direction: column;
+    margin: 100px auto 0 auto;
+    width: fit-content;
+}
+
+@keyframes formAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(300px);
+    }
+    20% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+form * {
+    color: var()
+}
+
+form h1 {
+    margin-bottom: 25px;
+}
+
+form div {
+    margin-bottom: 25px;
+    padding: 10px 0;
+    position: relative;
+    width: 500px;
+}
+
+form label {
+    padding: 0 10px 5px 0;
+    position: absolute;
+    top: 0;
+}
+
+form input,
+form textarea {
+    border: 2px solid var(--not-white);
+    caret-color: var(--my-green);
+    font-size: 1.2rem;
+    padding: 18px 10px 5px 10px;
+    width: 100%;
+}
+
+form textarea {
+    height: 150px;
+}
+
+form button {
+    border: 5px solid var(--my-green);
+    color: var(--my-green);
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 10px;
+    transition: 100ms;
+}
+
+form button:hover {
+    border: 6px solid var(--my-green);
+    cursor: pointer;
+    padding: 9px;
+    transition: 100ms;
+}
+
+form button:focus {
+    outline: none;
+}
+
+form input:focus,
+form textarea:focus {
+    outline: none;
+}
+
+.submitted {
+    animation: formSubmit 800ms ease-in;
+    opacity: 0;
+    transform-origin: top;
+}
+
+@keyframes formSubmit {
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    7% {
+        transform: translateX(-20px);
+    }
+    35% {
+        transform: translateX(-20px) scale(1);
+    }
+    90% {
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(900px) scale(0.3);
+        opacity: 0;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    form {
+        width: 95%;
+    }
+
+    form div {
+        width: 100%;
+    }
+}

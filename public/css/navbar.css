@@ -1,0 +1,58 @@
+.nav {
+    background-color: var(--dark-grey);
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.nav > * {
+    color: var(--not-white);
+    font-size: 1.4rem;
+    padding: 15px 40px;
+}
+
+.nav *:nth-child(2) {
+    animation: dropDown 750ms ease-out;
+}
+
+.nav *:nth-child(3) {
+    animation: dropDown 600ms ease-out;
+}
+
+.nav *:nth-child(4) {
+    animation: dropDown 450ms ease-out;
+}
+
+.nav h1 {
+    color: var(--my-green);
+    left: 0;
+    position: absolute;
+}
+
+.nav-active {
+    color: var(--my-green);
+}
+
+.nav-animation {
+    animation: animateNavbar 600ms ease-out;
+    background-color: var(--my-green);
+    height: 4px;
+}
+
+@keyframes animateNavbar {
+    0% {
+        transform: translateX(-110%);
+    }   
+    100% {
+        transform: translateX(0);
+    } 
+}
+
+@keyframes dropDown {
+    0% {
+        transform: translateY(-200%);
+    }   
+    100% {
+        transform: translateY(0);
+    } 
+}
