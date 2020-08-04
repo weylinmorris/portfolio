@@ -2,13 +2,13 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 25px;
-    margin: 75px;
+    margin: 100px;
 }
 
 @media only screen and (max-width: 1200px) {
     .portfolio {
         grid-template-columns: repeat(2, 1fr);
-        margin: 75px 50px;
+        margin: 100px 50px;
     }
 }
 
