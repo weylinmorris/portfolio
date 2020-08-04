@@ -8,7 +8,7 @@
     "dev": "webpack-dev-server",
     "start": "node src/server.js",
     "graph": "git log --oneline --decorate --all --graph",
-    "build": "webpack --watch"
+    "build:prod": "webpack -p"
   },
   "keywords": [],
   "author": "",
