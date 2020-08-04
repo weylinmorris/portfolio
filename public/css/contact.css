@@ -2,7 +2,7 @@ form {
     animation: formAnimation 600ms ease-out;
     display: flex;
     flex-direction: column;
-    margin: 100px auto 0 auto;
+    margin: 50px auto 0 auto;
     width: fit-content;
 }
 
@@ -107,7 +107,12 @@ form textarea:focus {
 
 @media only screen and (max-width: 780px) {
     form {
+        margin-top: 90px;
         width: 95%;
+    }
+
+    form h1 {
+        font-size: 1.8rem;
     }
 
     form div {
