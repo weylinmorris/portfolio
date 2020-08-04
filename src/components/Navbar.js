@@ -19,7 +19,7 @@ class Navbar extends Component {
     }
 
     closeNav() {
-        this.state.navExtended && document.getElementsByName('nav')[0].classList.remove('extended')
+        this.state.navExtended && document.getElementsByClassName('nav')[0].classList.remove('extended')
         this.setState(() => ({ navExtended: false }))
     }
 
