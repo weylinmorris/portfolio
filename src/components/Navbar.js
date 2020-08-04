@@ -6,6 +6,7 @@ class Navbar extends Component {
         super(props)
 
         this.toggleNav = this.toggleNav.bind(this)
+        this.closeNav = this.closeNav.bind(this)
 
         this.state = {
             navExtended: false
@@ -15,6 +16,11 @@ class Navbar extends Component {
     toggleNav() {
         this.state.navExtended ? document.getElementsByClassName('nav')[0].classList.remove('extended') : document.getElementsByClassName('nav')[0].classList.add('extended')
         this.setState((prev) => ({ navExtended: !prev.navExtended }))
+    }
+
+    closeNav() {
+        this.state.navExtended && document.getElementsByName('nav')[0].classList.remove('extended')
+        this.setState(() => ({ navExtended: false }))
     }
 
     render() {
