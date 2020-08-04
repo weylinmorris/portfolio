@@ -27,12 +27,12 @@ class Navbar extends Component {
         return (
             <div className="nav-animation-container">
                 <div className="nav-container">
-                    <NavLink to="/"><h1>weylin.dev</h1></NavLink>
+                    <NavLink onClick={this.closeNav} to="/"><h1>weylin.dev</h1></NavLink>
                     <nav className="nav">
-                        <NavLink to="/" activeClassName="nav-active"exact={true} >Home</NavLink>
-                        <NavLink to="/portfolio" activeClassName="nav-active" >Portfolio</NavLink>
+                        <NavLink onClick={this.closeNav} to="/" activeClassName="nav-active"exact={true} >Home</NavLink>
+                        <NavLink onClick={this.closeNav} to="/portfolio" activeClassName="nav-active" >Portfolio</NavLink>
                         {/* <NavLink to="/blog" activeClassName="nav-active" >Blog</NavLink> !! STILL IN DEVELOPMENT!! */}
-                        <NavLink to="/contact" activeClassName="nav-active" >Contact</NavLink>
+                        <NavLink onClick={this.closeNav} to="/contact" activeClassName="nav-active" >Contact</NavLink>
                     </nav>
                     <button onClick={this.toggleNav} className="nav-toggle">☰</button>
                 </div>
