@@ -7,11 +7,11 @@ const portfolioItems = [
         liveLink: "https://envirotels.com"
     },
     {
-        title: "Tesla API",
-        description: "This is a program that I wrote to interface with my car to adjust climate controls, monitor location, etc. Demo available upon request.",
-        imgUrl: "./media/",
-        githubLink: " ",
-        liveLink: ""
+        title: "Task Manager App",
+        description: "This is a webapp that I made as part of my 1 day 1 project challenge. This one uses React and Redux on a Node.js server, and persisting data using localStorage.",
+        imgUrl: "./media/task-manager-app-screenshot.png",
+        githubLink: "https://github.com/weylinmorris/task-manager",
+        liveLink: "https://weylin-task-manager.herokuapp.com"
     },
     {
         title: "Budgeting App",

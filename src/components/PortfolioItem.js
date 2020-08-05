@@ -16,7 +16,7 @@ class PortfolioItem extends Component {
                         this.props.item.liveLink && <a href={this.props.item.liveLink} target="_blank">See Live</a>
                     }
                     {
-                        this.props.item.githubLink && <a href={this.props.item.liveLink} target="_blank">View Code</a>
+                        this.props.item.githubLink && <a href={this.props.item.githubLink} target="_blank">View Code</a>
                     }
                 </div>
             </div>
