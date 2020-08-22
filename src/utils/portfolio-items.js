@@ -13,12 +13,19 @@ const portfolioItems = [
         githubLink: "https://github.com/weylinmorris/task-manager",
         liveLink: "https://weylin-task-manager.herokuapp.com"
     },
+    // {
+    //     title: "Budgeting App",
+    //     description: "This is a webapp that I developed to showcase my proficiency in React, Redux, Firebase, Git SCM/Github, and production deployment.",
+    //     imgUrl: "./media/",
+    //     githubLink: "",
+    //     liveLink: ""
+    // },
     {
-        title: "Budgeting App",
-        description: "This is a webapp that I developed to showcase my proficiency in React, Redux, Firebase, Git SCM/Github, and production deployment.",
-        imgUrl: "./media/",
-        githubLink: " ",
-        liveLink: " "
+        title: "Dino Game",
+        description: "This is a game I made because I wanted to experiment with managing objects in a scene, and also with collision detection. Nothing too serious, but was fun to make!",
+        imgUrl: "./media/dino-game-screenshot.png",
+        githubLink: "https://github.com/weylinmorris/dino-game",
+        liveLink: "https://weylin-dino-game.herokuapp.com"
     },
 ]
 

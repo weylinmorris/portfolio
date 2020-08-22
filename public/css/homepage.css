@@ -1,3 +1,135 @@
-.bio-container {
-    margin-top: 90px;
+.homepage-container {
+    display: flex;
+    height: 100vh;
+    justify-content: space-evenly;
+    padding-top: 200px;
+    overflow: hidden;
+    width: 100vw;
+}
+
+.bio-container h1 {
+    color: var(--my-green);
+    font-size: 180px;
+    line-height: 180px;
+}
+
+.bio {
+    border-left: 5px solid var(--my-green);
+    margin: 0 0 50px 9px;
+    padding-left: 30px;
+    width: 380px;
+}
+
+.bio-link {
+    border: 5px solid var(--my-green);
+    color: var(--my-green);
+    margin-left: 9px;
+    padding: 8px 40px;
+}
+
+.arrow-down {
+    align-items: center;
+    bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    left: 50%;
+    margin-left: -40px;
+    position: fixed;
+}
+
+.arrow-down:hover {
+    cursor: pointer;
+}
+
+.arrow-down p {
+    animation: animate-arrow-text 4000ms cubic-bezier(0,.5,.3,1.25) 3000ms infinite;
+    color: var(--my-green);
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.arrow-down img {
+    animation: animate-arrow 4000ms cubic-bezier(0,.5,.3,1.25) 3000ms infinite;
+}
+
+@keyframes animate-arrow {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-10px);
+    }
+    40% {
+        opacity: 0;
+    }
+    41% {
+        opacity: 0;
+        transform: translateY(0);
+    }
+    75% {
+        opacity: 1;
+    }
+}
+
+@keyframes animate-arrow-text {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-15px);
+    }
+    40% {
+        opacity: 0;
+    }
+    41% {
+        opacity: 0;
+        transform: translateY(0);
+    }
+    75% {
+        opacity: 1;
+    }
+}
+
+.skills {
+    height: 100vh;
+    margin: 0 auto;
+    padding-top: 200px;
+    position: relative;
+    width: 100vw;
+}
+
+.skills p {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+@media only screen and (max-width: 1380px) {
+    .bio-container h1 {
+        font-size: 120px;
+    }
+}
+
+@media only screen and (max-width: 1180px) {
+    .homepage-container img {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    .homepage-container {
+        padding-top: 100px;
+    }
+
+    .bio-container {
+        max-width: 90vw;
+    }
+
+    .bio-container h1 {
+        font-size: 80px;
+    }
+
+    .bio-container p {
+        max-width: inherit;
+    }
 }
